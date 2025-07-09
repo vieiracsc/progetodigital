@@ -1,1 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
 
+main {
+  border: 1px solid red;
+  background-color: #f9f8fe;
+}
+
+.container {
+  background-color: white;
+  width: 838px;
+
+  border: 1px solid blue;
+  border-radius: 4px;
+
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+
+  hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+
+  .info-mensagem {
+    text-align: center;
+
+    p {
+      font-size: 72px;
+    }
+
+    h1,
+    h3 {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: 1px;
+      color: #1f1f1f;
+    }
+  }
+
+  .info {
+    h2 {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.75px;
+      color: #474747;
+
+      margin-bottom: 10px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      li {
+        display: flex;
+        gap: 10px;
+
+        h4 {
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0.25px;
+          color: #8f8f8f;
+        }
+      }
+    }
+  }
+
+  .info-revisao {
+    .info-revisao-item {
+      display: flex;
+      gap: 20px;
+
+      .info-revisao-img {
+        height: 58px;
+        width: 72px;
+        background-color: #e2e3ff;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        img {
+          width: 50.62px;
+          position: absolute;
+          top: -2px;
+          border-radius: 2.67px;
+        }
+      }
+
+      .info-revisao-descricao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          font-weight: 700;
+          font-style: Bold;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.75px;
+          color: #1f1f1f;
+        }
+      }
+    }
+  }
+}
