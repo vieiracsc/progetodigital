@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>trabalho</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +14,69 @@
     />
   </head>
   <body>
-    <main>
+    <header class="flex justify-center p-[20px] gap-[80px]">
+      <div class="w-[60%]">
+        <div class="flex justify-between items-center flex-row">
+          <div class="flex items-center flex-row gap-[5px]">
+            <img
+              class="w-[33px] h-[33px]"
+              src="./src/ds_logo.svg"
+              alt="logo-digital"
+            />
+            <p class="text-[36.6px] font-bold text-[#C92071]">Digital Store</p>
+          </div>
+          <div
+            class="flex items-center bg-[#F5F5F5] rounded-[8px] px-[15px] py-[10px] w-full max-w-md"
+          >
+            <input
+              type="text"
+              placeholder="Pesquise aqui..."
+              class="bg-transparent outline-none w-[43px] h-[28px] text-gray-800 flex-grow"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-[19.22px] w-[18.76px] text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 103 10.5a7.5 7.5 0 0013.15 6.15z"
+              />
+            </svg>
+          </div>
+          <a class="underline decoration-1" href="#">Cadastre-se</a>
+          <a
+            class="bg-[#C92071] rounded-[8px] p-[10px] w-[114px] h-[40px] text-white flex items-center justify-center"
+            href="#"
+          >
+            Entrar</a
+          >
+          <a href="#">CAR</a>
+        </div>
+        <ul class="flex flex-row gap-[30px] pt-[20px]">
+          <li class="hover:text-[#C92071] hover:border-b-2 hover:font-bold">
+            <a href="./index_home.html">Home</a>
+          </li>
+          <li class="hover:text-[#C92071] hover:border-b-2 hover:font-bold">
+            <a href="#">Produtos</a>
+          </li>
+          <li class="hover:text-[#C92071] hover:border-b-2 hover:font-bold">
+            <a href="#">Categorias</a>
+          </li>
+          <li class="hover:text-[#C92071] hover:border-b-2 hover:font-bold">
+            <a href="#">Meus Pedidos</a>
+          </li>
+          <li class="hover:text-[#C92071] hover:border-b-2 hover:font-bold">
+            <a href="./finalizar_compra.html">Finalizar Compra</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="bg-white">
       <section>
         <div class="container">
           <div class="mensagem">
@@ -29,22 +92,22 @@
             <ul>
               <li>
                 <h4>Nome:</h4>
-                <p>Vieira</p>
+                <p>Francisco Antonio Pereira</p>
               </li>
 
               <li>
                 <h4>CPF:</h4>
-                <p>97807545544</p>
+                <p>123485913-35</p>
               </li>
 
               <li>
                 <h4>Email</h4>
-                <p>vieiracsc@gmail.com</p>
+                <p>francisco@gmail.com</p>
               </li>
 
               <li>
                 <h4>Celular</h4>
-                <p>(85)55555555555</p>
+                <p>(85)5555-5555</p>
               </li>
             </ul>
           </div>
@@ -119,4 +182,90 @@
       </section>
     </main>
   </body>
+  <!-- ############### Rodapé ############### -->
+  <footer
+    class="flex flex-col justify-center items-center gap-[2rem] bg-[#1f1f1f] pb-5"
+  >
+    <div class="flex flex-row justify-center w-[90%]">
+      <div class="flex flex-row w-[30%] justify-between">
+        <div
+          class="flex text-[#ffffff] flex-col justify-center pt-10 gap-[1rem]"
+        >
+          <img
+            class="w-[253px] h-[44px] font-[600] text-[36.4px]"
+            src="/assets/logo footer.png"
+            alt=""
+          />
+          <h3 class="font-[inter]">Digital Store</h3>
+          <h2 class="w-[307px] h-[78px] font-[400] text-[16px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            officiis voluptas voluptatibus similique minus nihil distinctio
+          </h2>
+          <div class="flex flex-row h-[20.53px] w-[124.12px] gap-[2rem]">
+            <img
+              class="h-[20.11px] w-[20.11px] bg-[#ffffff]"
+              src="/assets/face.png"
+              alt=""
+            />
+            <img
+              class="h-[20.11px] w-[20.11px] bg-[#ffffff]"
+              src="/assets/insta.png"
+              alt=""
+            />
+            <img
+              class="h-[20.11px] w-[20.11px] bg-[#ffffff]"
+              src="assets/tweeter.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[70%] flex flex-row justify-around">
+        <!-- informação -->
+        <div
+          class="text-[#ffffff] flex flex-col items-left pt-10 pl-5 gap-[1rem] font-[600] text-[16px]"
+        >
+          Informação
+          <h2 class="pt-5 font-[400] text-[16px]">Sobre drip store</h2>
+          <h2 class="font-[400] text-[16px]">Segurança</h2>
+          <h2 class="font-[400] text-[16px]">Wishlist</h2>
+          <h2 class="font-[400] text-[16px]">Blog</h2>
+          <h2 class="font-[400] text-[16px]">Trabalhe conosco</h2>
+          <h2 class="font-[400] text-[16px]">Meus Pedidos</h2>
+        </div>
+
+        <!-- Categorias -->
+        <div
+          class="text-[#ffffff] flex flex-col items-left pt-10 gap-[1rem] font-[600] text-[16px]"
+        >
+          Categorias
+          <h2 class="pt-5 font-[400] text-[16px]">Camisetas</h2>
+          <h2 class="font-[400] text-[16px]">Calças</h2>
+          <h2 class="font-[400] text-[16px]">Bonés</h2>
+          <h2 class="font-[400] text-[16px]">Headphones</h2>
+          <h2 class="font-[400] text-[16px]">Tênis</h2>
+        </div>
+
+        <!-- Contato -->
+        <div
+          class="text-[#ffffff] flex flex-col pt-10 gap-[1rem] font-[600] text-[16px]"
+        >
+          Contato
+          <h2 class="w-[233px] font-[400] text-[16px]">
+            Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+            60150-161
+          </h2>
+          <h2 class="w-[233px] font-[400] text-[16px]">(85) 3051-3411</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center w-[90%] gap-[1rem]">
+      <hr class="w-[100%] text-[#ffffff] h-[1px] opacity-[30%]" />
+      <h2 class="text-[#ffffff] font-[400] text-[13px]">
+        @ 2022 Digital College
+      </h2>
+    </div>
+  </footer>
 </html>
